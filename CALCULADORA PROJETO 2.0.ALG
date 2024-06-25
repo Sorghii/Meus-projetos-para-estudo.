@@ -4,259 +4,267 @@ var
    loop, resposta, resposta_soma, resposta_sub, resposta_mult, resposta_dvs: inteiro
 inicio
 
-   //Introdução
+   //IntroduÃ§Ã£o
    Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-   Escreval ("Seja bem vindo, esta é a versão 2.0 do meu projeto ''Calculadora''.")
-   Escreval ("Este código está sujeito a alterações. Por favor, reportem quaisquer erros encontrados.")
+   Escreval ("Seja bem vindo, esta Ã© a versÃ£o 2.0 do meu projeto ''Calculadora''.")
+   Escreval ("Este cÃ³digo estÃ¡ sujeito a alteraÃ§Ãµes. Por favor, reportem quaisquer erros encontrados.")
    Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
 
-   //Opções
-   Escreval ("Escolha qual tipo de conta irá fazer:")
+   //OpÃ§Ãµes
+   Escreval ("Escolha qual tipo de conta irÃ¡ fazer:")
    Escreval ("[1] Soma")
-   Escreval ("[2] Subtração")
-   Escreval ("[3] Multiplicação")
-   Escreval ("[4] Divisão")
-   Escreval ("[5] Equações de segundo grau")
-   Escreval ("[6] Cálculo da hipotenusa de um triângulo retângulo")
-   Escreval ("[7] Média entre números")
-   Escreval ("[8] Cálculo de IMC")
-   Escreval ("[9] Sair do código")
-   Escreva ("Opção de número: ")
+   Escreval ("[2] SubtraÃ§Ã£o")
+   Escreval ("[3] MultiplicaÃ§Ã£o")
+   Escreval ("[4] DivisÃ£o")
+   Escreval ("[5] EquaÃ§Ãµes de segundo grau")
+   Escreval ("[6] CÃ¡lculo da hipotenusa de um triÃ¢ngulo retÃ¢ngulo")
+   Escreval ("[7] MÃ©dia entre nÃºmeros")
+   Escreval ("[8] CÃ¡lculo de IMC")
+   Escreval ("[9] Sair do cÃ³digo")
+   Escreva ("OpÃ§Ã£o de nÃºmero: ")
    Leia (resposta)
 
-   //Opções:
+   //OpÃ§Ãµes:
    Enquanto resposta <> 9 FACA
-      //Caso o usuário escreva um número inválido.
+      //Caso o usuÃ¡rio escreva um nÃºmero invÃ¡lido.
       Enquanto resposta < 1 FACA
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-         Escreval ("Número inválido. Escolha uma opção válida.")
+         Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
          Escreval ("[1] Soma")
-         Escreval ("[2] Subtração")
-         Escreval ("[3] Multiplicação")
-         Escreval ("[4] Divisão")
-         Escreval ("[5] Equações de segundo grau")
-         Escreval ("[6] Cálculo da hipotenusa de um triângulo retângulo")
-         Escreval ("[7] Média entre números")
-         Escreval ("[8] Cálculo de IMC")
-         Escreval ("[9] Sair do código")
-         Escreva ("Opção de número: ")
+         Escreval ("[2] SubtraÃ§Ã£o")
+         Escreval ("[3] MultiplicaÃ§Ã£o")
+         Escreval ("[4] DivisÃ£o")
+         Escreval ("[5] EquaÃ§Ãµes de segundo grau")
+         Escreval ("[6] CÃ¡lculo da hipotenusa de um triÃ¢ngulo retÃ¢ngulo")
+         Escreval ("[7] MÃ©dia entre nÃºmeros")
+         Escreval ("[8] CÃ¡lculo de IMC")
+         Escreval ("[9] Sair do cÃ³digo")
+         Escreva ("OpÃ§Ã£o de nÃºmero: ")
          Leia (resposta)
       fimenquanto
       Enquanto resposta > 9 FACA
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-         Escreval ("Número inválido. Escolha uma opção válida.")
+         Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
          Escreval ("[1] Soma")
-         Escreval ("[2] Subtração")
-         Escreval ("[3] Multiplicação")
-         Escreval ("[4] Divisão")
-         Escreval ("[5] Equações de segundo grau")
-         Escreval ("[6] Cálculo da hipotenusa de um triângulo retângulo")
-         Escreval ("[7] Média entre números")
-         Escreval ("[8] Cálculo de IMC")
-         Escreval ("[9] Sair do código")
-         Escreva ("Opção de número: ")
+         Escreval ("[2] SubtraÃ§Ã£o")
+         Escreval ("[3] MultiplicaÃ§Ã£o")
+         Escreval ("[4] DivisÃ£o")
+         Escreval ("[5] EquaÃ§Ãµes de segundo grau")
+         Escreval ("[6] CÃ¡lculo da hipotenusa de um triÃ¢ngulo retÃ¢ngulo")
+         Escreval ("[7] MÃ©dia entre nÃºmeros")
+         Escreval ("[8] CÃ¡lculo de IMC")
+         Escreval ("[9] Sair do cÃ³digo")
+         Escreva ("OpÃ§Ã£o de nÃºmero: ")
          Leia (resposta)
       fimenquanto
       Limpatela
 
-      //Caso o usuário escolha soma.
+      //Caso o usuÃ¡rio escolha soma.
       Se resposta = 1 ENTAO
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-         Escreval ("Escreva o primeiro número:")
+         Escreval ("Caso escreva alguma letra ou qualquer caractere que nÃ£o seja um nÃºmero, ele serÃ¡ ignorado caso acompanhe outros nÃºmeros, ou simplesmente serÃ¡ considerado como 0.")
+         Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+         Escreval ("Escreva o primeiro nÃºmero:")
          Leia (n_um)
-         Escreval ("Escreva o próximo número:")
+         Escreval ("Escreva o prÃ³ximo nÃºmero:")
          Leia (n_dois)
          Soma <- n_um + n_dois
          Escreval ("[1] Resultado")
-         Escreval ("[2] Utilizar mais números")
-         Escreva ("Opção de número: ")
+         Escreval ("[2] Utilizar mais nÃºmeros")
+         Escreva ("OpÃ§Ã£o de nÃºmero: ")
          Leia (resposta_soma)
          Se resposta_soma = 1 ENTAO
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua soma é", Soma)
+            Escreval ("O resultado para sua soma Ã©", Soma)
             loop <- 1
          senao
             Enquanto resposta_soma <> 1 FACA
                Enquanto resposta_soma < 1 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_soma)
                fimenquanto
                Enquanto resposta_soma > 2 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_soma)
                fimenquanto
                Enquanto resposta_soma = 2 FACA
                   Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-                  Escreval ("Escreva o próximo número da sua soma abaixo:")
+                  Escreval ("Escreva o prÃ³ximo nÃºmero da sua soma abaixo:")
                   Leia (n_soma)
                   Soma <- Soma + n_soma
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_soma)
                fimenquanto
             fimenquanto
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua soma é", Soma)
+            Escreval ("O resultado para sua soma Ã©", Soma)
             loop <- 1
          fimse
       fimse
 
 
-      //Caso o usuário escolha subtração.
+      //Caso o usuÃ¡rio escolha subtraÃ§Ã£o.
       Se resposta = 2 ENTAO
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-         Escreval ("Escreva o primeiro número:")
+         Escreval ("Caso escreva alguma letra ou qualquer caractere que nÃ£o seja um nÃºmero, ele serÃ¡ ignorado caso acompanhe outros nÃºmeros, ou simplesmente serÃ¡ considerado como 0.")
+         Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+         Escreval ("Escreva o primeiro nÃºmero:")
          Leia (n_um)
-         Escreval ("Escreva o próximo número:")
+         Escreval ("Escreva o prÃ³ximo nÃºmero:")
          Leia (n_dois)
          Sub <- n_um - n_dois
          Escreval ("[1] Resultado")
-         Escreval ("[2] Utilizar mais números")
-         Escreva ("Opção de número: ")
+         Escreval ("[2] Utilizar mais nÃºmeros")
+         Escreva ("OpÃ§Ã£o de nÃºmero: ")
          Leia (resposta_sub)
          Se resposta_sub = 1 ENTAO
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua subtração é", Sub)
+            Escreval ("O resultado para sua subtraÃ§Ã£o Ã©", Sub)
             loop <- 1
          senao
             Enquanto resposta_sub <> 1 FACA
                Enquanto resposta_sub < 1 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_sub)
                fimenquanto
                Enquanto resposta_sub > 2 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_sub)
                fimenquanto
                Enquanto resposta_sub = 2 FACA
                   Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-                  Escreval ("Escreva o próximo número da sua subtração abaixo:")
+                  Escreval ("Escreva o prÃ³ximo nÃºmero da sua subtraÃ§Ã£o abaixo:")
                   Leia (n_sub)
                   Sub <- Sub - n_sub
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_sub)
                fimenquanto
             fimenquanto
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua subtração é", Sub)
+            Escreval ("O resultado para sua subtraÃ§Ã£o Ã©", Sub)
             loop <- 1
          fimse
       fimse
 
-      //Caso o usuário escolha multiplicação.
+      //Caso o usuÃ¡rio escolha multiplicaÃ§Ã£o.
       Se resposta = 3 ENTAO
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-         Escreval ("Escreva o primeiro número:")
+         Escreval ("Caso escreva alguma letra ou qualquer caractere que nÃ£o seja um nÃºmero, ele serÃ¡ ignorado caso acompanhe outros nÃºmeros, ou simplesmente serÃ¡ considerado como 0.")
+         Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+         Escreval ("Escreva o primeiro nÃºmero:")
          Leia (n_um)
-         Escreval ("Escreva o próximo número:")
+         Escreval ("Escreva o prÃ³ximo nÃºmero:")
          Leia (n_dois)
          Mult <- n_um * n_dois
          Escreval ("[1] Resultado")
-         Escreval ("[2] Utilizar mais números")
-         Escreva ("Opção de número: ")
+         Escreval ("[2] Utilizar mais nÃºmeros")
+         Escreva ("OpÃ§Ã£o de nÃºmero: ")
          Leia (resposta_mult)
          Se resposta_mult = 1 ENTAO
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua multiplicação é", Mult)
+            Escreval ("O resultado para sua multiplicaÃ§Ã£o Ã©", Mult)
             loop <- 1
          senao
             Enquanto resposta_mult <> 1 FACA
                Enquanto resposta_mult < 1 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_mult)
                fimenquanto
                Enquanto resposta_mult > 2 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_mult)
                fimenquanto
                Enquanto resposta_mult = 2 FACA
                   Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-                  Escreval ("Escreva o próximo número da sua multiplicação abaixo:")
+                  Escreval ("Escreva o prÃ³ximo nÃºmero da sua multiplicaÃ§Ã£o abaixo:")
                   Leia (n_mult)
                   Mult <- Mult * n_mult
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_mult)
                fimenquanto
             fimenquanto
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua multiplicação é", Mult)
+            Escreval ("O resultado para sua multiplicaÃ§Ã£o Ã©", Mult)
             loop <- 1
          fimse
       fimse
 
-      //Caso o usuário escolha divisão.
+      //Caso o usuÃ¡rio escolha divisÃ£o.
       Se resposta = 4 ENTAO
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-         Escreval ("Escreva o primeiro número:")
+         Escreval ("Caso escreva alguma letra ou qualquer caractere que nÃ£o seja um nÃºmero, ele serÃ¡ ignorado caso acompanhe outros nÃºmeros, ou simplesmente serÃ¡ considerado como 0.")
+         Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
+         Escreval ("Escreva o primeiro nÃºmero:")
          Leia (n_um)
-         Escreval ("Escreva o próximo número:")
+         Escreval ("Escreva o prÃ³ximo nÃºmero:")
          Leia (n_dois)
          dvs <- n_um / n_dois
          Escreval ("[1] Resultado")
-         Escreval ("[2] Utilizar mais números")
-         Escreva ("Opção de número: ")
+         Escreval ("[2] Utilizar mais nÃºmeros")
+         Escreva ("OpÃ§Ã£o de nÃºmero: ")
          Leia (resposta_dvs)
          Se resposta_dvs = 1 ENTAO
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua divisão é", dvs)
+            Escreval ("O resultado para sua divisÃ£o Ã©", dvs)
             loop <- 1
          senao
             Enquanto resposta_dvs <> 1 FACA
                Enquanto resposta_dvs < 1 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_dvs)
                fimenquanto
                Enquanto resposta_dvs > 2 FACA
-                  Escreval ("Número inválido. Escolha uma opção válida.")
+                  Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_dvs)
                fimenquanto
                Enquanto resposta_dvs = 2 FACA
                   Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-                  Escreval ("Escreva o próximo número da sua divisão abaixo:")
+                  Escreval ("Escreva o prÃ³ximo nÃºmero da sua divisÃ£o abaixo:")
                   Leia (n_dvs)
                   dvs <- dvs / n_dvs
                   Escreval ("[1] Resultado")
-                  Escreval ("[2] Utilizar mais números")
-                  Escreva ("Opção de número: ")
+                  Escreval ("[2] Utilizar mais nÃºmeros")
+                  Escreva ("OpÃ§Ã£o de nÃºmero: ")
                   Leia (resposta_dvs)
                fimenquanto
             fimenquanto
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("O resultado para sua divisão é", dvs)
+            Escreval ("O resultado para sua divisÃ£o Ã©", dvs)
             loop <- 1
          fimse
       fimse
 
-      //Caso o usuário escolha equações de segundo grau.
+      //Caso o usuÃ¡rio escolha equaÃ§Ãµes de segundo grau.
       Se resposta = 5 ENTAO
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
          Escreval ("Escreva abaixo os valores de a, b e c:")
@@ -271,7 +279,7 @@ inicio
             Valor_x_um <- (-b+(Raizq(Delta)))/(2*a)
             Valor_x_dois <- (-b-(Raizq(Delta)))/(2*a)
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("Os valores reais de sua equação são:")
+            Escreval ("Os valores reais de sua equaÃ§Ã£o sÃ£o:")
             Escreval ("x' =", Valor_x_um, "   x'' =", Valor_x_dois)
             loop <- 1
          senao
@@ -279,20 +287,21 @@ inicio
                Valor_x_um <- (-b+(Raizq(Delta)))/(2*a)
                Valor_x_dois <- Valor_x_um
                Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-               Escreval ("O valor de Delta em sua equação é 0, portanto:")
-               Escreval ("O valor real de sua equação é:")
+               Escreval ("O valor de Delta em sua equaÃ§Ã£o Ã© 0, portanto:")
+               Escreval ("O valor real de sua equaÃ§Ã£o Ã©:")
                Escreval ("x =", Valor_x_um)
                loop <- 1
             senao
                Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-               Escreval ("A equação apresentada não possui valores reais.")
+               Escreval ("A equaÃ§Ã£o apresentada nÃ£o possui valores reais.")
                loop <- 1
             fimse
          fimse
       fimse
 
-      //Caso o usuário escolha calcular a hipotenusa de um triangulo retangulo
+      //Caso o usuÃ¡rio escolha calcular a hipotenusa de um triangulo retangulo
       Se resposta = 6 ENTAO
+         Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
          Escreval ("Escreva os valores dos catetos abaixo:")
          Escreva ("Valor do primeiro cateto: ")
          Leia (cateto_um)
@@ -301,38 +310,39 @@ inicio
          Escreval ("")
          Hipotenusa_ao_quadrado <- cateto_um^2 + cateto_dois^2
          Hipotenusa <- RaizQ (Hipotenusa_ao_quadrado)
-         Escreval ("O valor da hipotenusa é ", Hipotenusa)
+         Escreval ("O valor da hipotenusa Ã© ", Hipotenusa)
+         loop <- 1
       fimse
-      //Caso o usuário escolha fazer a média entre números.
+      //Caso o usuÃ¡rio escolha fazer a mÃ©dia entre nÃºmeros.
       Se resposta = 7 ENTAO
          Henrique <- 1
          Soma_m <- 0
-         Escreval ("Quantos números você irá utilizar para calcular a média?")
+         Escreval ("Quantos nÃºmeros vocÃª irÃ¡ utilizar para calcular a mÃ©dia?")
          Leia (divisor)
          Se divisor < 2 entao
-            Escreval ("Para calculos de médias, é preciso de pelo menos dois números")
+            Escreval ("Para calculos de mÃ©dias, Ã© preciso de pelo menos dois nÃºmeros")
          senao
-            Escreval ("Escreva o primeiro número: ")
+            Escreval ("Escreva o primeiro nÃºmero: ")
             Leia (Resposta_do_usuario)
             Soma_m <- Soma_m  + Resposta_do_usuario
             Enquanto Henrique < divisor faca
-               Escreval ("Escreva o proximo número: ")
+               Escreval ("Escreva o proximo nÃºmero: ")
                Leia (Resposta_do_usuario)
                Soma_m <- Soma_m  + Resposta_do_usuario
                Henrique <- Henrique + 1
             fimenquanto
             Resultado <- Soma_m / divisor
-            Escreval ("O resultado da media desses", divisor, " números é", Resultado)
+            Escreval ("O resultado da media desses", divisor, " nÃºmeros Ã©", Resultado)
          fimse
       fimse
 
-      //Caso o usuário escolha calcular um IMC.
+      //Caso o usuÃ¡rio escolha calcular um IMC.
       Se resposta = 8 entao
          Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
          loop <- 0
          Enquanto loop <> 1 FACA
 
-            Escreval ("Para calcularmos o seu IMC, precisamos de algumas informações: ")
+            Escreval ("Para calcularmos o seu IMC, precisamos de algumas informaÃ§Ãµes: ")
             Escreval ("Peso (kg): ")
             Leia (peso)
             Escreval ("Altura (cm): ")
@@ -340,7 +350,7 @@ inicio
             Escreval ("Idade (anos): ")
             Leia (idade)
             Escreval ("")
-            //Cálculos
+            //CÃ¡lculos
             Se peso > 0 entao
                Se altura > 0 entao
                   Se idade > 0 entao
@@ -352,224 +362,224 @@ inicio
                         resp_imc <- int(imc) + 1
                      fimse
                      Se idade < 2 entao
-                        Escreval ("A criança é muito nova para o calculo de IMC, é necessário ter 2 anos ou mais")
+                        Escreval ("A crianÃ§a Ã© muito nova para o calculo de IMC, Ã© necessÃ¡rio ter 2 anos ou mais")
                      fimse
                      //Se a idade for de 2 a 5
                      Se (idade >= 2) e (idade <= 5) entao
                         Se Imc < 14.5 entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança está abaixo do peso.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a estÃ¡ abaixo do peso.")
                            loop <- 1
                         fimse
                         Se (Imc >= 14.5) e (Imc <= 17) entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança está no peso normal.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a estÃ¡ no peso normal.")
                            loop <- 1
                         fimse
                         Se (Imc > 17) e (Imc <= 18) entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança em sobrepeso.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a em sobrepeso.")
                            loop <- 1
                         fimse
                         Se Imc > 18 entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança está com obesidade.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a estÃ¡ com obesidade.")
                            loop <- 1
                         fimse
                      fimse
                      //Se a idade for de 6 a 9
                      Se (idade >= 6) e (idade <= 9) entao
                         Se Imc < 14 entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança está abaixo do peso.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a estÃ¡ abaixo do peso.")
                            loop <- 1
                         fimse
                         Se (Imc >= 14) e (Imc <= 19) entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança está no peso normal.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a estÃ¡ no peso normal.")
                            loop <- 1
                         fimse
                         Se (Imc > 19) e (Imc <= 21) entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança em sobrepeso.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a em sobrepeso.")
                            loop <- 1
                         fimse
                         Se Imc > 21 entao
-                           Escreval ("O IMC é aproximadamente", Resp_imc, ", com isso, a criança está com obesidade.")
+                           Escreval ("O IMC Ã© aproximadamente", Resp_imc, ", com isso, a crianÃ§a estÃ¡ com obesidade.")
                            loop <- 1
                         fimse
                      fimse
                      //Se a idade for de 10 a 12
                      Se (idade >= 10) e (idade <= 12) entao
                         Se Imc < 15 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está abaixo do peso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ abaixo do peso.")
                            loop <- 1
                         fimse
                         Se (Imc >= 14) e (Imc <= 21) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está no peso normal.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ no peso normal.")
                            loop <- 1
                         fimse
                         Se (Imc > 21) e (Imc <= 23) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você em sobrepeso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª em sobrepeso.")
                            loop <- 1
                         fimse
                         Se Imc > 23 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade.")
                            loop <- 1
                         fimse
                      fimse
                      //Se a idade for de 13 a 15
                      Se (idade >= 13) e (idade <= 15) entao
                         Se Imc < 16 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está abaixo do peso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ abaixo do peso.")
                            loop <- 1
                         fimse
                         Se (Imc >= 16) e (Imc <= 23) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está no peso normal.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ no peso normal.")
                            loop <- 1
                         fimse
                         Se (Imc > 23) e (Imc <= 25) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você em sobrepeso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª em sobrepeso.")
                            loop <- 1
                         fimse
                         Se Imc > 25 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade.")
                            loop <- 1
                         fimse
                      fimse
                      //Se a idade for de 16 a 18
                      Se (idade >= 16) e (idade < 18) entao
                         Se Imc < 17 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está abaixo do peso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ abaixo do peso.")
                            loop <- 1
                         fimse
                         Se (Imc >= 17) e (Imc <= 25) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está no peso normal.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ no peso normal.")
                            loop <- 1
                         fimse
                         Se (Imc > 25) e (Imc <= 27) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você em sobrepeso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª em sobrepeso.")
                            loop <- 1
                         fimse
                         Se Imc > 27 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade.")
                            loop <- 1
                         fimse
                      fimse
                      //Se a idade for de 18 a 64
                      Se (idade >= 18) e (idade <= 64) entao
                         Se Imc < 18.5 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está abaixo do peso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ abaixo do peso.")
                            loop <- 1
                         fimse
                         Se (Imc >= 18.5) e (Imc <= 24.9) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está no peso normal.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ no peso normal.")
                            loop <- 1
                         fimse
                         Se (Imc > 24.9) e (Imc <= 29.9) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você em sobrepeso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª em sobrepeso.")
                            loop <- 1
                         fimse
                         Se (Imc > 30) e (Imc <= 34.9) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade grau I.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade grau I.")
                            loop <- 1
                         fimse
                         Se (Imc > 34.9) e (Imc <= 39.9) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade grau II.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade grau II.")
                            loop <- 1
                         fimse
                         Se Imc >= 40 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade grau III.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade grau III.")
                            loop <- 1
                         fimse
                      fimse
                      //Se a idade for maior de 64
                      Se idade > 64 entao
                         Se Imc < 22 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está abaixo do peso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ abaixo do peso.")
                            loop <- 1
                         fimse
                         Se (Imc >= 22) e (Imc <= 27) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está no peso normal.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ no peso normal.")
                            loop <- 1
                         fimse
                         Se (Imc > 27) e (Imc <= 30) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você em sobrepeso.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª em sobrepeso.")
                            loop <- 1
                         fimse
                         Se (Imc > 30) e (Imc <= 35) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade grau I.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade grau I.")
                            loop <- 1
                         fimse
                         Se (Imc > 35 e Imc < 40) entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade grau II.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade grau II.")
                            loop <- 1
                         fimse
                         Se Imc >= 40 entao
-                           Escreval ("Seu IMC é aproximadamente", Resp_imc, ", com isso, você está com obesidade grau III.")
+                           Escreval ("Seu IMC Ã© aproximadamente", Resp_imc, ", com isso, vocÃª estÃ¡ com obesidade grau III.")
                            loop <- 1
                         fimse
                      fimse
                   senao
-                     Escreval ("As informações fornecidas são inválidas, escreva apenas números válidos.")
+                     Escreval ("As informaÃ§Ãµes fornecidas sÃ£o invÃ¡lidas, escreva apenas nÃºmeros vÃ¡lidos.")
                   fimse
                senao
-                  Escreval ("As informações fornecidas são inválidas, escreva apenas números válidos.")
+                  Escreval ("As informaÃ§Ãµes fornecidas sÃ£o invÃ¡lidas, escreva apenas nÃºmeros vÃ¡lidos.")
                fimse
             senao
-               Escreval ("As informações fornecidas são inválidas, escreva apenas números válidos.")
+               Escreval ("As informaÃ§Ãµes fornecidas sÃ£o invÃ¡lidas, escreva apenas nÃºmeros vÃ¡lidos.")
             fimse
          fimenquanto
       fimse
-      //Para proporcionar ao usuário uma possibilidade de fazer contas infinitas contas.
+      //Para proporcionar ao usuÃ¡rio uma possibilidade de fazer contas infinitas contas.
       Se loop = 1 entao
 
-         //Caso o usuário escreva um número inválido.
+         //Caso o usuÃ¡rio escreva um nÃºmero invÃ¡lido.
          Enquanto resposta < 1 FACA
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("Número inválido. Escolha uma opção válida.")
+            Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
             Escreval ("[1] Soma")
-            Escreval ("[2] Subtração")
-            Escreval ("[3] Multiplicação")
-            Escreval ("[4] Divisão")
-            Escreval ("[5] Equações de segundo grau")
-            Escreval ("[6] Cálculo da hipotenusa de um triângulo retângulo")
-            Escreval ("[7] Média entre números")
-            Escreval ("[8] Cálculo de IMC")
-            Escreval ("[9] Sair do código")
-            Escreva ("Opção de número: ")
+            Escreval ("[2] SubtraÃ§Ã£o")
+            Escreval ("[3] MultiplicaÃ§Ã£o")
+            Escreval ("[4] DivisÃ£o")
+            Escreval ("[5] EquaÃ§Ãµes de segundo grau")
+            Escreval ("[6] CÃ¡lculo da hipotenusa de um triÃ¢ngulo retÃ¢ngulo")
+            Escreval ("[7] MÃ©dia entre nÃºmeros")
+            Escreval ("[8] CÃ¡lculo de IMC")
+            Escreval ("[9] Sair do cÃ³digo")
+            Escreva ("OpÃ§Ã£o de nÃºmero: ")
             Leia (resposta)
             loop <- 2
          fimenquanto
          Enquanto resposta > 9 FACA
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
-            Escreval ("Número inválido. Escolha uma opção válida.")
+            Escreval ("NÃºmero invÃ¡lido. Escolha uma opÃ§Ã£o vÃ¡lida.")
             Escreval ("[1] Soma")
-            Escreval ("[2] Subtração")
-            Escreval ("[3] Multiplicação")
-            Escreval ("[4] Divisão")
-            Escreval ("[5] Equações de segundo grau")
-            Escreval ("[6] Cálculo da hipotenusa de um triângulo retângulo")
-            Escreval ("[7] Média entre números")
-            Escreval ("[8] Cálculo de IMC")
-            Escreval ("[9] Sair do código")
-            Escreva ("Opção de número: ")
+            Escreval ("[2] SubtraÃ§Ã£o")
+            Escreval ("[3] MultiplicaÃ§Ã£o")
+            Escreval ("[4] DivisÃ£o")
+            Escreval ("[5] EquaÃ§Ãµes de segundo grau")
+            Escreval ("[6] CÃ¡lculo da hipotenusa de um triÃ¢ngulo retÃ¢ngulo")
+            Escreval ("[7] MÃ©dia entre nÃºmeros")
+            Escreval ("[8] CÃ¡lculo de IMC")
+            Escreval ("[9] Sair do cÃ³digo")
+            Escreva ("OpÃ§Ã£o de nÃºmero: ")
             Leia (resposta)
             loop <- 2
          fimenquanto
-         //Código de repetição
+         //CÃ³digo de repetiÃ§Ã£o
          Se loop = 1 entao
             Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
             Escreval ("Escolha agora o que deseja fazer:")
             Escreval ("[1] Soma")
-            Escreval ("[2] Subtração")
-            Escreval ("[3] Multiplicação")
-            Escreval ("[4] Divisão")
-            Escreval ("[5] Equações de segundo grau")
-            Escreval ("[6] Cálculo da hipotenusa de um triângulo retângulo")
-            Escreval ("[7] Média entre números")
-            Escreval ("[8] Cálculo de IMC")
-            Escreval ("[9] Sair do código")
-            Escreva ("Opção de número: ")
+            Escreval ("[2] SubtraÃ§Ã£o")
+            Escreval ("[3] MultiplicaÃ§Ã£o")
+            Escreval ("[4] DivisÃ£o")
+            Escreval ("[5] EquaÃ§Ãµes de segundo grau")
+            Escreval ("[6] CÃ¡lculo da hipotenusa de um triÃ¢ngulo retÃ¢ngulo")
+            Escreval ("[7] MÃ©dia entre nÃºmeros")
+            Escreval ("[8] CÃ¡lculo de IMC")
+            Escreval ("[9] Sair do cÃ³digo")
+            Escreva ("OpÃ§Ã£o de nÃºmero: ")
             Leia (resposta)
             Limpatela
          fimse
       fimse
    fimenquanto
-   //Caso o usuário escolha "Sair"
+   //Caso o usuÃ¡rio escolha "Sair"
    Se resposta = 9 ENTAO
       Limpatela
       Escreval ("--------------------------------------------------------------------------------------------------------------------------------------------------------------------")
